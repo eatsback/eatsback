@@ -79,7 +79,12 @@
             background-color: #e03572;
         }
 
+        .image-container img {
+        width: 50%;  /* Set width to 50% of the container */
+        max-width: 500px; /* Set maximum width */
+        height: auto;   /* Maintain aspect ratio */
         /* Footer Section */
+            
         .footer {
             margin-top: 50px;
             font-size: 14px;
@@ -102,8 +107,10 @@
             <h1>Get Your beautiful white dress now!</h1>
             <p>Take advantage of this limited-time offer. Get your dress and enjoy the best deals!</p>
         </div>
-        <img src="https://www.promgirl.com/cdn/shop/files/Amy_4.jpg?v=1684684917&width=1920" alt="Descriptive Text" width="300" height="auto" />
 
+        <div class="image-container">
+            <img src="https://www.promgirl.com/cdn/shop/files/Amy_4.jpg?v=1684684917&width=1920" alt="Descriptive Text" width="300" height="auto" />
+        </div>
 
         <!-- Call-to-Action Section -->
         <button class="cta" onclick="window.location.href='https://www.promgirl.com/products/velvi-vel-amy-dress?srsltid=AfmBOoopRnOiDKlBKrJ5WCQv8snF8RjYbQvmOOEbtWTrMGL4UgdQtI_c'">Get your white dress now</button>
